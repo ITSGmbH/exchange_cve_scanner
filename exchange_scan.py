@@ -4,7 +4,7 @@ from datetime import datetime
 
 max_reports = 5
 networks = " ".join(sys.argv[1:])
-nmap_params = "-p 443 --script ms-exchange-version.nse --script-args=showcves,http.max-cache-size=10000000"
+nmap_params = "-p 443 --script ./nse/ms-exchange-version.nse --script-args=showcves,http.max-cache-size=10000000"
 out_file = "out/%s.xml" % datetime.now().strftime("%Y-%m-%d_%H-%M")
 md_file = "scans/%s.md" % datetime.now().strftime("%Y-%m-%d_%H-%M")
 

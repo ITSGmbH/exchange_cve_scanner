@@ -1,0 +1,3 @@
+[submodule "nse"]
+	path = nse
+	url = https://github.com/righel/ms-exchange-version-nse.git
